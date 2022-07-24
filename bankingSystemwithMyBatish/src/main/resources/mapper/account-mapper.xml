@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace = "com.rasime.bankingSystemwithMyBatish.repository.AccountRepository">
+    <insert id="insertWithAccountNumber" parameterType="Account" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO Account(name,surname,email,tc,type,balance,lastModified) VALUES(#{name}, #{surname},#{email},#{tc},#{type},#{balance},#{lastModified})
+	</insert>
+    
+    </mapper>
+    	
